@@ -1,5 +1,14 @@
 # RXD CODE BASE - TS TEMPLATE
 
+# Tech Stacks
+**React:** [![Tech Stack](https://skills.thijs.gg/icons?i=react)](https://skills.thijs.gg)
+**TailwindCSS:** [![Tech Stack](https://skills.thijs.gg/icons?i=tailwind)](https://skills.thijs.gg)
+**Vite:** [![Tech Stack](https://skills.thijs.gg/icons?i=vite)](https://skills.thijs.gg)
+
+### Node version
+
+> Node ^21
+
 ## Structure des dossiers :file_folder:
 - components
 - contexts
