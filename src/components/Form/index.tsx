@@ -6,6 +6,14 @@ import React from "react"
 import TextArea from "./TextArea"
 import Radio from "./Radio"
 
+
+/** *********************************************************
+ *
+ *! REFERENCE: https://www.react-hook-form.com/advanced-usage/
+ *
+ * ********************************************************
+ */
+
 type FormType = {
   children: React.ReactNode;
   defaultValues: any | undefined;
@@ -16,16 +24,10 @@ const Form = ({ children, defaultValues, onSubmit }: FormType) => {
   const methods = useForm({ defaultValues })
   const { handleSubmit } = methods
 
-  // const onSubmitFn = (data: unknown) => {
-  //   console.log({ data });
-
-  // }
-
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
       {React.Children.map(children, (child: React.ReactNode) => {
         const { props, type } = (child as React.ReactElement<any>);
-        // console.log({ props, type });
 
         return props.name
           ? React.createElement(type, {
